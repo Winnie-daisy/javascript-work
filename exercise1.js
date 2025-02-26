@@ -83,6 +83,102 @@ console.log(part1.concat(part2)); // Output: "30 Days of JavaScript"
 console.log(challenge.repeat(2)); // Output: "30 Days Of JavaScript30 Days Of JavaScript"
 
 
+// To check if typeof '10' is exactly equal to 10, we need to convert the string '10' to a number:
+if (typeof '10' === typeof 10) {
+    console.log('They are exactly equal');
+} else {
+    console.log('They are not exactly equal');
+    let num = Number('10');
+    console.log(num); // Now it is exactly equal
+}
+//To check if parseFloat('9.8') is equal to 10, we need to round it to the nearest integer:
+let num = parseFloat('9.8');
+if (num === 10) {
+    console.log('They are equal');
+} else {
+    console.log('They are not equal');
+    num = Math.round(num);
+    console.log(num); // Now it is exactly equal to 10
+}
+//To check if 'on' is found in both 'python' and 'jargon':
+let word1 = 'python';
+let word2 = 'jargon';
+console.log(word1.includes('on') && word2.includes('on')); // true
+//To check if 'jargon' is in the sentence "I hope this course is not full of jargon":
+let sentence1 = "I hope this course is not full of jargon";
+console.log(sentence1.includes('jargon')); // true
+
+//To generate a random number between 0 and 100 inclusively:
+let randomNum1 = Math.floor(Math.random() * 101);
+console.log(randomNum1);
+
+//Generate a random number between 50 and 100 inclusively:
+const randomNum50to100 = Math.floor(Math.random() * 51) + 50;
+console.log(randomNum50to100);
+
+//Generate a random number between 0 and 255 inclusively
+const randomNum0to255 = Math.floor(Math.random() * 256);
+console.log(randomNum0to255);
+
+//Access the 'JavaScript' string characters using a random number:
+const str = 'JavaScript';
+const randomIndex = Math.floor(Math.random() * str.length);
+const randomChar = str[randomIndex];
+console.log(randomChar);
+
+
+
+//Use console.log() and escape characters to print the following pattern:
+console.log("1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n5 1 5 25 125");
+
+//Use substr to slice out the phrase "because because because" from the following sentence:
+let sentence2 = 'You cannot end a sentence with because because because is a conjunction';
+let phrase = sentence2.substr(31, 23); // 31 is the starting index and 23 is the length of the phrase
+console.log(phrase); // Output: "because because because"
+
+
+//Declare firstName, lastName, country, city, age, isMarried, year variables and check their data types:
+let firstName = "Winnie";
+let lastName = "Daisy";
+let country = "Uganda";
+let city = "Kampala";
+let age = 22;
+let isMarried = false;
+let year = 2025;
+
+console.log(typeof firstName); // string
+console.log(typeof lastName); // string
+console.log(typeof country); // string
+console.log(typeof city); // string
+console.log(typeof age); // number
+console.log(typeof isMarried); // boolean
+console.log(typeof year); // number
+
+//Check if the type of '10' is equal to 10:
+console.log(typeof '10' === typeof 10); // false
+
+//Check if parseInt('9.8') is equal to 10:
+console.log(parseInt('9.8') === 10); // false
+
+//Boolean value is either true or false:
+console.log(true); // true
+console.log(false); // false
+
+//Write three JavaScript statements which provide truthy values:
+console.log(1); // truthy
+console.log('hello'); // truthy
+console.log({}); // truthy (empty object)
+
+//Write three JavaScript statements which provide falsy values:
+console.log(0); // falsy
+console.log(''); // falsy (empty string)
+console.log(null); // falsy
+
+
+
+
+
+
 
 
 
